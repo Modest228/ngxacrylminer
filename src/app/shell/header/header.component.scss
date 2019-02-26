@@ -4,6 +4,32 @@
   margin-bottom: $spacer;
 }
 
+.dropup, .dropright, .dropdown, .dropleft {
+  color: #ff5e39;
+}
+
 .nav-link.dropdown-toggle {
   cursor: pointer;
+  color: #fff;
+}
+
+.navbar.navbar-expand-lg {
+  background: #000;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-item {
+  color: #fff;
+}
+
+.nav-item:hover {
+  color: #ff5e39;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
 }
