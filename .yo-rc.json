@@ -1,0 +1,23 @@
+{
+  "generator-ngx-rocket": {
+    "version": "5.3.0",
+    "props": {
+      "location": "path",
+      "target": [
+        "web"
+      ],
+      "pwa": true,
+      "ui": "bootstrap",
+      "auth": false,
+      "lazy": true,
+      "angulartics": true,
+      "analyticsProvider": "ga",
+      "googleAnalyticsAccount": "UA-132217917-1",
+      "prettier": false,
+      "appName": "acrylngx",
+      "projectName": "acrylngx",
+      "packageManager": "npm",
+      "mobile": []
+    }
+  }
+}

@@ -1,0 +1,422 @@
+<div class="container-fluid">
+  <div class="jumbotron text-center">
+    <h1>
+      <img class="logo" src="assets/img/acryl.svg" alt="acryl logo"/>
+      <span translate>Hello world !</span>
+    </h1>
+    <app-loader [isLoading]="isLoading"></app-loader>
+    <q [hidden]="isLoading">{{quote}}</q>
+    <p>
+      <button
+        class="btn btn-primary"
+        angulartics2On="click"
+        angularticsAction="Click button below quote"
+        [angularticsCategory]="quote">
+        Click me to send an Analytics event
+      </button>
+    </p>
+  </div>
+</div>
+<main class="main">
+  <div class="first-banner-wrp" >
+    <picture>
+      <source type="image/webp" srcset="assets/img/miner-top.webp">
+      <img src="assets/img/miner-top.jpg" alt="Acryl miner top image">
+    </picture>
+    <div class="container small-content">
+      <div class="row">
+        <div class="col-lg-7 first-banner-content">
+          <h2 class="second-level-title" translate>Welcome to ACRYL NODE</h2>
+          <div class="text" translate>All the benefits of mining in one solution.</div>
+          <ul class="three-buttons-list acryl-buttons">
+            <li><a href="#order" class="basic-button orange" translate>Order ACRYL NODE</a></li>
+            <li>
+              <a id="downloaddocuments" class="download" translate>Download documentation<img src="assets/img/download-orange.svg" alt="Acryl miner download icon"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="only-miner-section">
+    <picture>
+      <source type="image/webp"  srcset="assets/img/miner-bg.webp">
+      <img src="assets/img/miner-bg.jpg" alt="Acryl miner black block">
+    </picture>
+    <div class="container small-content">
+      <div class="row">
+        <div class="col-lg-12 node-mobile">
+          <picture>
+            <source type="image/webp" srcset="assets/img/one-miner.webp">
+            <img src="assets/img/one-miner.png" alt="Miner image">
+          </picture>
+        </div>
+        <div class="col-lg-7">
+          <span class="miner-title" id="platform" translate>Get to know<br translate>with<span>ACRYL NODE</span></span>
+          <ul class="about-miner-list row">
+            <li>
+              <div class="row align-items-start">
+                <div class="col col-lg-4"><img src="assets/img/lpos.svg" alt="Miner lpos image"></div>
+                <div class="col-9 col-sm-6 col-md-8">
+                  <div class="list-title" translate>Mechanism LPOS</div>
+                  <div class="small" translate>Leasing Proof-of-Stake</div>
+                  <div class="text" translate>LPOS is the most advanced principle of the blockchain-network, which does not require large computing power.</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col col-lg-4"><img src="assets/img/nergy.svg" alt="Miner nergy image"></div>
+                <div class="col-9 col-sm-6 col-md-8">
+                  <div class="list-title" translate>Low power consumption</div>
+                  <div class="text" translate>ACRYL NODE is economical and needs energy consumption comparable to a conventional computer.</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col col-lg-4"><img src="assets/img/all-in.svg" alt="Miner all-in image"></div>
+                <div class="col-9 col-sm-6 col-md-8">
+                  <span class="list-title">All-in-Box</span>
+                  <div class="text" translate>No complicated steps, simple steps to start earning on mining</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="leave-feedback-wrp feedback-top">
+    <div class="container">
+      <div class="feedback-block">
+        <div class="col-lg-7">
+          <span class="feedback-descript" translate>Leave a request and get special<br translate>conditions for the purchase of a miner.</span>
+        </div>
+        <div class="col-lg-5">
+          <a  href="#order" class="basic-button feedback-button black" translate>ORDER ACRYL NODE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="benefits-wrp">
+    <div class="container">
+      <div class="benefits-content">
+        <div class="col-lg-6">
+          <div class="benefit-image">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="assets/img/client.webp">
+              <img src="assets/img/client.png" alt="Miner client image">
+            </picture>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <span class="benefits-title" translate>Key<br translate>advantages</span>
+          <ul class="benefits-list">
+            <li translate>Low noise</li>
+            <li translate>Easy setup and automatic updates</li>
+            <li translate>Ergonomics and compactness</li>
+            <li translate>Convenient mobile app</li>
+            <li translate>Projected yield</li>
+            <li translate>Fast payback period</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="principle-of-work-wrp">
+    <div class="container small-content">
+      <span class="principle-title" translate>Principle of operation</span>
+      <div class="row principle-row">
+        <div class="col-lg-6">
+          <div class="left-principle">
+            <ul class="principle-list">
+              <li class="acryl-big">
+                <span class="principle-title">ACRYL PLATFORM</span>
+                <div class="text" translate>Блокчейн-платформа.</div>
+              </li>
+              <li class="second">
+                <span class="principle-title" translate>ACRYL COIN</span>
+                <div class="text" translate>The internal currency of the platform that is used to ensure the operation of the platform.</div>
+              </li>
+              <li class="three">
+                <span class="principle-title" translate>CUSTOMERS PLATFORM</span>
+                <div class="text" translate>Business and individuals who use the blockchain to store information and launch projects.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="right-principle">
+            <ul class="principle-list">
+              <li class="first-right">
+                <span class="principle-title" translate>PLATFORM MINERS</span>
+                <div class="text" translate>The community of ACRYL NODES owners, which ensure the operability of the network by confirming transactions and writing data into blocks.</div>
+              </li>
+              <li class="black-border">
+                <span class="principle-title" translate>PLATFORM PROJECTS</span>
+                <div class="text" translate>The capabilities of the ACRYL platform make it possible to unlock the potential of the blockchain for real business projects. The first projects are already working on the platform, in the near future their number will increase. The more projects - the greater the domestic demand for ACRYL coin, the higher the “complexity” of the network and, as a result, the higher the profit of the owners of ACRYL NODE.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="profitability-wrp">
+    <div class="container small-content">
+      <span class="profitability-title" translate>Mining profitability</span>
+      <div class="row profitability-row">
+        <div class="col-md-6">
+          <div class="item-of-profitability">
+            <span class="number">1</span>
+            <span class="step-title" translate>Step 1 —</span>
+            <div class="text" translate>You are buying ACRYL NODE.<br translate>Together with the device you get a certain amount of coins of the platform - the so-called coin stack.</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="item-of-profitability">
+            <span class="number">2</span>
+            <span class="step-title" translate>Step 2 —</span>
+            <div class="text" translate>You are connecting ACRYL NODE to the network.<br translate>From this point on, your device serves the work of the blockchain network, and for each action you receive a reward in the platform coins.</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="item-of-profitability">
+            <span class="number">3</span>
+            <span class="step-title" translate>Step 3 —</span>
+            <div class="text" translate>More coins - more yield.<br translate>After a certain period of time, you can leave the income on the miner's balance sheet, and earn even more in the next month.</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="item-of-profitability">
+            <span class="number">4</span>
+            <span class="step-title" translate>Step 4 —</span>
+            <div class="text" translate>If you want to exchange domestic currency for BTC - you can do it at any time through the internal exchange platform.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="prices-table-wrp">
+        <table class="prices-table">
+          <tbody>
+          <tr class="table-head">
+            <td translate>Coin</td>
+            <td translate>Miner</td>
+            <td translate>Miner price</td>
+            <td translate>Monthly yield in $</td>
+            <td translate>Revenue net<br translate>per month in $</td>
+            <td translate>Quick payback period</td>
+            <td translate>Electricity costs<br translate>per month</td>
+            <td translate>Yield per day in $</td>
+            <td translate>Payback</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="acryl-logo">
+                <img src="assets/img/acryl.svg"alt="Acryl image">
+                Acryl
+              </div>
+            </td>
+            <td><span><div class="tabl"> Acryl Node v1.0</div></span></td>
+            <td><div class="tabl"> 1300$ </div></td>
+            <td><div class="tabl">205$</div></td>
+            <td><div class="tabl">202$</div></td>
+            <td><div class="tabl">1$</div></td>
+            <td><div class="tabl">3$</div></td>
+            <td><div class="tabl">6,5$</div></td>
+            <td><div class="tabl" translate>6.5mon.</div></td>
+          </tr>
+          <tr>
+            <td>BTC</td>
+            <td>
+              <span>s9j - 14,5 TH</span><br>
+              <span>s15 - 27 TH</span><br>
+              <span>t15 - 23 TH</span><br>
+              <span>s11 - 20 TH</span>
+            </td>
+            <td>320$<br>1200$<br>850$<br>550$</td>
+            <td>70$<br>132$<br>111$<br>96$</td>
+            <td>20$<br>80$<br>51$<br>30$</td>
+            <td>3500$</td>
+            <td>50$<br>60$<br>60$<br>60$</td>
+            <td>2,3$<br>4,4$<br>3,7$<br>3,2$</td>
+            <td translate>16mon.<br translate>15mon.<br translate>17mon.<br translate>18mon.</td>
+          </tr>
+          <tr>
+            <td>LTC</td>
+            <td><span>L3++ - 590 Mh</span></td>
+            <td>220$</td>
+            <td>39$</td>
+            <td>9$</td>
+            <td>25$</td>
+            <td>30$</td>
+            <td>1,3$</td>
+            <td translate>23mon.</td>
+          </tr>
+          <tr>
+            <td>x11</td>
+            <td><span>d3 - 19,3 Mh</span></td>
+            <td>120$</td>
+            <td>36$</td>
+            <td>-1$</td>
+            <td>66$</td>
+            <td>40$</td>
+            <td>1,2$</td>
+            <td>></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <span class="prices-table-descript" translate>As of 01/14/2019. The price for 1 kWt = 3,5rub / kWt</span>
+    </div>
+  </div>
+  <div class="leave-feedback-wrp documentation" id="download">
+    <div class="container">
+      <div class="feedback-block">
+        <div class="col-lg-7">
+          <span class="documentation-title" translate>Documentation</span>
+          <span class="feedback-descript" translate>ACRYL NODE - fully certified.<br translate>Read the equipment documentation.</span>
+        </div>
+        <div class="col-lg-5">
+          <a id="downloaddocuments2"  class="basic-button feedback-button gray" translate>Download documents<img src="assets/img/download-orange.svg" alt="Miner download icon"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="profitable-terms-wrp" id="order">
+    <picture>
+      <source type="image/webp" media="(min-width: 1200px)" srcset="assets/img/terms-bg.webp">
+      <img src="assets/img/terms-bg.jpg" alt="Miner terms image">
+    </picture>
+    <div class="container small-content">
+      <div class="row terms-row">
+        <div class="col-lg-6">
+          <span class="terms-title" translate>Favorable conditions for first buyers</span>
+          <div class="text" translate>We welcome the early followers of ACRYL. After purchasing the equipment, you will receive a referral code that will entitle you to a 10% increase in capacity for 1 month, subject to purchase at your recommendation.</div>
+        </div>
+        <div class="col-lg-6">
+          <div class="feedback-form">
+            <span class="feedback-form-title" translate>Leave a request and get special conditions for the purchase of a miner.</span>
+            <form>
+              <input id="namebuy" type="text" aria-label="namebuy" name="name" placeholder="Имя">
+              <input id="phonebuy" type="tel" aria-label="phonebuy" name="phone" placeholder="Телефон">
+              <input id="emailbuy" type="text" aria-label="emailbuy"name="email" placeholder="E-mail">
+              <button id="buysubmit" type="button" class="basic-button orange order" translate>Reservation ACRYL NODE</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="node-wrp with-padding">
+    <picture>
+      <source type="image/webp" media="(min-width: 1200px)" srcset="assets/img/noda.webp">
+      <img src="assets/img/noda.jpg" alt="Noda image">
+    </picture>
+    <div class="container small-content">
+      <div class="row">
+        <div class="col-lg-12 node-mobile">
+          <picture>
+            <source type="image/webp" srcset="assets/img/one-miner.webp">
+            <img src="assets/img/one-miner.png" alt="miner image">
+          </picture>
+        </div>
+        <div class="col-lg-7 node-content">
+          <span class="node-title">ACRYL NODE</span>
+          <div class="text" translate>ACRYL NODE is a boxed solution for mining.<br>What the crypto industry lacked.</div>
+          <span class="node-list-title" translate>Just a few simple steps:</span>
+          <ul class="node-list">
+            <li translate><span>1</span>- Purchase and installation of the device at home or in the office.</li>
+            <li translate><span>2</span>- Connection to the network, installation of the application and wallet</li>
+            <li translate><span>3</span>- Daily income.</li>
+          </ul>
+          <div class="text" translate>The daily income earned by ACRYL NODE can be easily converted to Bitcoin.<br>Coin Liquidity provided on the internal exchange of the platform.</div>
+          <a id="aboutacrylplatform"  class="basic-button orange details" translate>Read more about ACRYL NODE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="profitable-terms-wrp partner" id="partner">
+    <picture>
+      <source type="image/webp" media="(min-width: 1200px)" srcset="assets/img/partner-bg.webp">
+      <img src="assets/img/partner-bg.jpg" alt="miner partner image">
+    </picture>
+    <div class="container small-content">
+      <div class="row terms-row">
+        <div class="col-lg-6">
+          <span class="terms-title" translate>Become a partner</span>
+          <div class="text" translate>Leave a request and learn about the special conditions for the distribution of miners of the ACRYL project.</div>
+        </div>
+        <div class="col-lg-6">
+          <div class="feedback-form">
+            <form>
+              <input id="namepartner" aria-label="namepartner" type="text" name="name" placeholder="Имя">
+              <input id="phonepartner" aria-label="phonepartner" type="tel" name="phone" placeholder="Телефон">
+              <input id="emailpartner" aria-label="emailpartner" type="text" name="email" placeholder="E-mail" required="required">
+              <button id="partnersubmit" type="button" class="basic-button orange order" translate>I am waiting for a call</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container small-content footer-content">
+    <div class="row subscribe-row">
+      <div class="col-md-6">
+        <span class="subscribe-title" translate>Subscribe to our<br translate>newsletter</span>
+      </div>
+      <div class="col-md-6 search-form-wrp">
+        <form>
+          <div class="search-row">
+            <input id="userEmail" type="text" aria-label="userEmail" placeholder="E-mail" name="email" required="required">
+            <button id="emailSubmit" type="button" class="basic-button red subscribe-button" translate>Subscribe</button>
+          </div>
+          <label class="check-after-subscribe">
+            <input id="emailCh1" type="checkbox" required="required" value="check1">
+            <span></span>
+            <span translate>I have read and agree with<a href="privacy-policy.html" class="privacy" translate>Privacy Policy</a><br> и <a href="cookies-policy.html" class="Politic" translate>Cookies Policy</a></span>
+          </label>
+          <label class="check-after-subscribe">
+            <input id="emailCh2" type="checkbox" required="required" value="check2">
+            <span></span>
+            <span translate>I agree to receive marketing information and newsletters from<a translate>ACRYL</a>by email</span>
+          </label>
+        </form>
+      </div>
+    </div>
+    <div class="row footer-nav-row">
+      <div class="col-lg-6 col-md-8">
+        <ul class="footer-nav">
+          <li>
+            <a href="" class="footer-logo">
+              <img src="assets/img/logo-orange.svg" alt="Acryl logo text">
+            </a>
+          </li>
+          <li><a href="#platform" translate>Platform</a></li>
+          <li><a href="#order" translate>To order</a></li>
+          <li><a href="#partner" translate>Build a partner</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-6 col-md-4">
+        <ul class="networks">
+          <li><a id="facebok"><img src="assets/img/fb.svg" alt="Facebok Page"></a></li>
+          <li><a id="twitter"><img src="assets/img/twitter.svg" alt="Twitter Page"></a></li>
+          <li><a id="youtube"><img src="assets/img/youtube.svg" alt="Youtube Page"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <ul class="footer-politics">
+        <li>Copyright © 2018, ACRYL </li>
+        <li>Privacy policy.  Cookies policy.  Cookies settings <br>Terms and conditions</li>
+        <li><a id="weisswaters" class="weisswater"> Made by Weisswater</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
