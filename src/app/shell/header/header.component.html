@@ -1,19 +1,27 @@
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="https://github.com/ngx-rocket" translate>APP_NAME</a>
+  <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">-->
+  <nav class="navbar navbar-expand-lg d-flex">
+    <a class="navbar-brand  mr-auto p-2" href="# " translate><img src="assets/img/acryl-logo-white.svg"></a>
     <button class="navbar-toggler" type="button" aria-controls="navbar-menu"
             aria-label="Toggle navigation" (click)="toggleMenu()" [attr.aria-expanded]="!menuHidden">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"><img src="assets/img/menu.svg"></span>
     </button>
     <div id="navbar-menu" class="collapse navbar-collapse float-xs-none" [ngbCollapse]="menuHidden">
       <div class="navbar-nav">
-        <a class="nav-item nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
-          <i class="fas fa-home"></i>
+        <a class="nav-item nav-link" routerLink="/home" routerLinkActive="active">
           <span translate>Home</span>
         </a>
-        <a class="nav-item nav-link text-uppercase" routerLink="/about" routerLinkActive="active">
-          <i class="fas fa-question-circle"></i>
-          <span translate>About</span>
+        <a class="nav-item nav-link" routerLink="/platform" href="#" routerLinkActive="active">
+          <span translate>Platform</span>
+        </a>
+        <a class="nav-item nav-link" routerLink="/order" href="#" routerLinkActive="active">
+          <span translate>Order</span>
+        </a>
+        <a class="nav-item nav-link" routerLink="/partner" href="#" routerLinkActive="active">
+          <span translate>Become a partner</span>
+        </a>
+        <a class="nav-item nav-link" routerLink="/about" href="#" routerLinkActive="active">
+          <span translate>Сontacts</span>
         </a>
       </div>
       <div class="navbar-nav ml-auto">
