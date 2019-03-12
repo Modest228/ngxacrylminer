@@ -15,6 +15,7 @@ import { HomeModule } from './home/home.module';
 import { ShellModule } from './shell/shell.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   imports: [
@@ -25,6 +26,11 @@ import { AppRoutingModule } from './app-routing.module';
     TranslateModule.forRoot(),
     NgbModule,
     CoreModule,
+    RouterModule.forRoot([{
+      path: '',
+      component: AppComponent
+    },
+    ]),
     SharedModule,
     ShellModule,
     HomeModule,

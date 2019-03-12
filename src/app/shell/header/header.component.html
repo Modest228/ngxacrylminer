@@ -1,7 +1,7 @@
 <header>
   <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">-->
   <nav class="navbar navbar-expand-lg d-flex">
-    <a class="navbar-brand  mr-auto p-2" href="# " translate><img src="assets/img/acryl-logo-white.svg"></a>
+    <a class="navbar-brand  mr-auto p-2" href="#" translate><img src="assets/img/acryl-logo-white.svg"></a>
     <button class="navbar-toggler" type="button" aria-controls="navbar-menu"
             aria-label="Toggle navigation" (click)="toggleMenu()" [attr.aria-expanded]="!menuHidden">
       <span class="navbar-toggler-icon"><img src="assets/img/menu.svg"></span>
@@ -11,16 +11,28 @@
         <a class="nav-item nav-link" routerLink="/home" routerLinkActive="active">
           <span translate>Home</span>
         </a>
-        <a class="nav-item nav-link" routerLink="/platform" href="#" routerLinkActive="active">
+        <a class="nav-item nav-link" routerLink="/platform" href="#" routerLinkActive="active"
+           angulartics2On="click"
+           angularticsAction="Click button Platform"
+           [angularticsCategory]="quote">
           <span translate>Platform</span>
         </a>
-        <a class="nav-item nav-link" routerLink="/order" href="#" routerLinkActive="active">
+        <a class="nav-item nav-link" routerLink="/order" href="#" routerLinkActive="active"
+           angulartics2On="click"
+           angularticsAction="Click button Order"
+           [angularticsCategory]="quote">
           <span translate>Order</span>
         </a>
-        <a class="nav-item nav-link" routerLink="/partner" href="#" routerLinkActive="active">
+        <a class="nav-item nav-link" routerLink="/partner" href="#" routerLinkActive="active"
+           angulartics2On="click"
+           angularticsAction="Click button Become a partner"
+           [angularticsCategory]="quote">
           <span translate>Become a partner</span>
         </a>
-        <a class="nav-item nav-link" routerLink="/about" href="#" routerLinkActive="active">
+        <a class="nav-item nav-link" routerLink="/about" href="#" routerLinkActive="active"
+           angulartics2On="click"
+           angularticsAction="Click button Сontacts"
+           [angularticsCategory]="quote">
           <span translate>Сontacts</span>
         </a>
       </div>
@@ -28,7 +40,10 @@
         <div class="nav-item" ngbDropdown placement="bottom-right">
           <a id="language-dropdown" class="nav-link" ngbDropdownToggle>{{currentLanguage}}</a>
           <div ngbDropdownMenu aria-labelledby="language-dropdown">
-            <button class="dropdown-item" *ngFor="let language of languages" (click)="setLanguage(language)">
+            <button class="dropdown-item" *ngFor="let language of languages" (click)="setLanguage(language)"
+                    angulartics2On="click"
+                    angularticsAction="Click button language"
+                    [angularticsCategory]="quote">
               {{language}}
             </button>
           </div>
