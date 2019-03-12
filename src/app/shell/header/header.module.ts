@@ -5,9 +5,7 @@ import { Angulartics2Module } from 'angulartics2';
 
 import { CoreModule } from '@app/core';
 import { SharedModule } from '@app/shared';
-import { HeaderRoutingModule } from './header-routing.module';
 import { HeaderComponent } from './header.component';
-import { QuoteService } from './quote.service';
 
 @NgModule({
   imports: [
@@ -16,13 +14,11 @@ import { QuoteService } from './quote.service';
     CoreModule,
     SharedModule,
     Angulartics2Module,
-    HeaderRoutingModule
   ],
   declarations: [
     HeaderComponent
   ],
   providers: [
-    QuoteService
   ]
 })
 export class HomeModule { }

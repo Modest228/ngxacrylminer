@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-
 import { I18nService } from '@app/core';
 
 @Component({
@@ -12,7 +11,8 @@ export class HeaderComponent implements OnInit {
 
   menuHidden = true;
 
-  constructor(private i18nService: I18nService) { }
+  constructor(private i18nService: I18nService) {
+  }
 
   ngOnInit() { }
 

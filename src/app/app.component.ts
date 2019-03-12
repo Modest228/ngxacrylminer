@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
+import {Router, NavigationEnd, ActivatedRoute, Params} from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
 import { merge } from 'rxjs';
@@ -18,8 +18,11 @@ const log = new Logger('App');
 })
 export class AppComponent implements OnInit {
 
+  id: string;
+
   constructor(private router: Router,
               private activatedRoute: ActivatedRoute,
+              private route: ActivatedRoute,
               private titleService: Title,
               private translateService: TranslateService,
               // do not remove the analytics injection, even if the call in ngOnInit() is removed
@@ -28,6 +31,17 @@ export class AppComponent implements OnInit {
               private i18nService: I18nService) { }
 
   ngOnInit() {
+    // GetUrlParameter
+    this.route.queryParams.subscribe(params => {
+      const date = params['id'];
+      console.log(date);
+      if (params['id'] === date) {
+          localStorage.setItem(date, date);
+      }
+      if (params['id'] === params['']) {
+        localStorage.removeItem(date);
+      }
+    });
     // Setup logger
     if (environment.production) {
       Logger.enableProductionMode();
